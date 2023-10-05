@@ -1,0 +1,26 @@
+.r {
+    height: 50px;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.title {
+    color: white;
+    padding-top: 7px;
+    padding-right: 30px;
+
+}
+
+.logo {
+    padding-left: 60px;
+    padding-top: 8px;
+}
+
+.seller {
+    padding-top: 7px;
+}
+
+.category {
+    border: 1px solid white;
+}
+
