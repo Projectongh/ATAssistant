@@ -11,7 +11,17 @@ def home(request):
     # return render(request, 'static/home.html', {"free": freecard})
 
 def contactus(request):
-    return render(request,'html_files/contactus.html')
+    status=False
+    if request.method=='POST':
+        name=request.POST.get("name","")
+        email=request.POST.get("email","")
+        phone=request.POST.get("phone","")
+        message=request.POST.get("message","")
+        x=contactus(name=name,email=email,phone=phone,message=message)
+        x.save
+        status=True
+    return render(request,'html_files/contactus.html',{'S':status})
+
 
 
 

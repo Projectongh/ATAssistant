@@ -6,6 +6,10 @@ class homeAdmin(admin.ModelAdmin):
     list_display = ("productName","price","productImage")
 admin.site.register(home,homeAdmin)
 
+class contactusAdmin(admin.ModelAdmin):
+    list_display = ("name","email","phone","message")
+admin.site.register(contactus,contactusAdmin)
+
 # class freeCardAdmin(admin.ModelAdmin):
 #     list_display = ("id", "freeicon", "freetitle", "freelink")
 #     list_per_page = 4
